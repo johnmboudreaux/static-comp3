@@ -6,123 +6,332 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/vendor/reset.css">
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/vendor/fonts.css">
+  <link rel="stylesheet" href="styles/vendor/normalize.css">
+  <link rel="stylesheet" href="styles/vendor/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="styles/vendor/fonts.css">
-  <script src="https://use.fontawesome.com/a9ce161a3e.js"></script>
-  <title>My Fitness Biotch</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>My Fitness Tracker</title>
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="row content-container">
-
-      <div class="col-lg-2 side-menu-container">
-
-        <div class="profile-pic-container">
-          <img class="profile-pic" src="images/IMG_1002.JPG" alt="">
-          <span class="profile-name">7 Minute Abs</span>
-        </div>
-
-        <div class="row side-row1">
-          <div class="col-lg-12 side-main-selector"> Activities</div>
-          <div class="col-lg-12 side"><i class="fa fa-user-circle" aria-hidden="true"></i> Steps</div>
-          <div class="col-lg-12 side"><i class="fa fa-cutlery" aria-hidden="true"></i> Calories</div>
-          <div class="col-lg-12 side"><i class="fa fa-bicycle" aria-hidden="true"></i> Workouts</div>
-          <div class="col-lg-12 side"><i class="fa fa-bed" aria-hidden="true"></i> Sleep</div>
-          <div class="col-lg-12 side"><i class="fa fa-balance-scale" aria-hidden="true"></i> Nutrition</div>
-        </div>
-
-        <div class="row side-row2">
-          <div class="col-lg-12 side-main-selector"> Settings</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Profile</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Friends</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Notifications</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Security</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> App Settings</div>
-        </div>
-
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12 side-main-selector"> Category</div>
-          <input type="checkbox" class="col-lg-12 admin-input side">
-          <!-- <div class="col-lg-12 side">Admin</div> -->
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Design</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Exec</div>
-          <div class="col-lg-12 side"><i class="fa fa-home"></i> Human R</div>
-        </div>
-
-      </div>
-
-      <div class="col-lg-10 right-side-container">
-
-        <div class="row row1">
-          <button class="col-lg-1 col-md-12 col-sm-1 row1-buttons"><img class="row1-icons" src="images/menu-button-of-three-horizontal-lines.svg" alt="Menu Icon"></button>
-          <input class="col-lg-8 col-md-12 col-sm-1 row1-search" type="text" placeholder="Search"></imput>
-          <button class="col-lg-1 col-md-12 col-sm-1 row1-buttons"><img class="row1-icons" src="images/magnifying-glass.svg" alt="search button"></button>
-          <button class="col-lg-1 col-md-12 col-sm-1 row1-buttons">P</button>
-          <button class="col-lg-1 col-md-12 col-sm-1 row1-buttons">Q</button>
-        </div>
-
-        <div class="row row2">
-          <div class="row2-top">
-            <p class="row2-title">Customer Service Representative</p>
-            <p class="location"><i class="fa fa-globe" aria-hidden="true"></i>Denver, Colorado</p>
-          </div>
-
-          <div class="row2-mid">
-            <button class="row2-button-cluster"><i class="fa fa-trash" aria-hidden="true"></i></button>
-            <button class="row2-button-cluster"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-            <button class="row2-button-cluster"><i class="fa fa-archive" aria-hidden="true"></i></button>
-            <button class="row2-button">Button</button>
-          </div>
-
-          <div class="row2-bottom">
-            <a href="" class="row2-links">Summary</a>
-            <a href="" class="row2-links">Applicants</a>
-            <a href="" class="row2-links">Job Board</a>
-            <a href="" class="row2-links">Interviews</a>
-            <a href="" class="row2-links">Activity</a>
-            <a href="" class="row2-links">Broadcast</a>
-            <a href="" class="row2-links">Notifications</a>
-          </div>
-        </div>
-
-        <div class="row row3">
-          <div class="col-lg-6 col-md-12 col-sm-1 row3-left">
-
-            <div class="circles-container">
-              <div class="circles">Steps<img src="images/graph-circle1.svg" alt="circle chart"></div>
-              <div class="circles">Distance<img src="images/graph-circle3.svg" alt="circle chart"></div>
-              <div class="circles">Cals Burned<img src="images/graph-circle2.svg" alt="circle chart"></div>
+            <!-- NAV -->
+            <div class="col-lg-2 nav">
+                <div class="row nav-row">
+                   <div class="col-lg-12 nav-profile">
+                       <img src="images/IMG_1214.jpg" alt="" class="nav-profile-image">
+                        <p class="nav-profile-name">John Michael <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                   </div>
+                </div>
+                <div class="row nav-row nav-section">
+                    <div class="col-lg-12 nav-menu-section">
+                        <p>Main</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-home"></i> HOME</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-briefcase"></i> JOBS</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-building"></i> RESUMES</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-tasks"></i> TASKS</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-calendar"></i> CALENDAR</p>
+                    </div>
+                </div>
+                <div class="row nav-row nav-section">
+                    <div class="col-lg-12 nav-menu-section">
+                        <p>Admin</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-user"></i> USERS</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-location-arrow"></i> LOCATIONS</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-file-word-o"></i> WORKFLOWS</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-building-o"></i> JOB BOARDS</p>
+                    </div>
+                    <div class="col-lg-12 nav-menu-item">
+                        <p><i class="fa fa-fw fa-share-square"></i> SOCIAL</p>
+                    </div>
+                </div>
+                <div class="row nav-row nav-section">
+                    <div class="col-lg-12 nav-menu-section">
+                        <p>Categories</p>
+                    </div>
+                    <div class="col-lg-12 nav-checkbox-item">
+                        <p><i class="fa fa-fw fa-check-square fa-yellow"></i> Administrative</p>
+                    </div>
+                    <div class="col-lg-12 nav-checkbox-item">
+                        <p><i class="fa fa-fw fa-square fa-blue"></i> Design</p>
+                    </div>
+                    <div class="col-lg-12 nav-checkbox-item">
+                        <p><i class="fa fa-fw fa-square fa-green"></i> Executive</p>
+                    </div>
+                    <div class="col-lg-12 nav-checkbox-item">
+                        <p><i class="fa fa-fw fa-square fa-red"></i> Human Resources</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="button1-container">
-              <button class="row3-button1">Dashboard</button>
+            <!-- BODY -->
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu-box">
+                          <i class="fa fa-fw fa-bars menu-box-icon"></i>
+                        </div>
+                        <input type="text" class="search-box" placeholder="Search for a job, task or resume">
+                        <div class="menu-box">
+                          <i class="fa fa-fw fa-user menu-box-icon"></i>
+                        </div>
+                        <div class="menu-box">
+                          <i class="fa fa-fw fa-calendar menu-box-icon"></i>
+                        </div>
+                        <div class="menu-box">
+                          <i class="fa fa-fw fa-truck menu-box-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row page-header">
+                    <div class="col-lg-6">
+                        <h2 class="page-title">Customer Service Representative</h2>
+                        <p class="page-header-location">
+                          <i class="fa fa-fw fa-location-arrow"></i>
+                          San Francisco, CA &middot; <span class="blue-text">Preview This Post</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn btn-default header-btn">
+                          <i class="fa fa-fw fa-circle green-text"></i> Open
+                        </button>
+                        <button class="btn btn-default header-btn">
+                          <i class="fa fa-fw fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-default header-btn">
+                          <i class="fa fa-fw fa-star"></i>
+                        </button>
+                        <button class="btn btn-default header-btn">
+                          <i class="fa fa-fw fa-cog"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 tabs">
+                        <div class="tab-select active">
+                          <p>SUMMARY</p>
+                        </div>
+                        <div class="tab-select">
+                          <p>APPLICANTS</p>
+                        </div>
+                        <div class="tab-select">
+                          <p>JOB BOARD</p>
+                        </div>
+                        <div class="tab-select">
+                          <p>INTERVIEWERS</p>
+                        </div>
+                        <div class="tab-select">
+                          <p>ACTIVITY</p>
+                        </div>
+                        <div class="tab-select">
+                          <p>BROADCAST</p>
+                        </div>
+                        <div class="tab-select">
+                          <p>NOTIFICATIONS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row graphs">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-4 graph-wrapper">
+                              <img class="graph-image" src="images/graph-circle1.svg" alt="circle chart">
+                            </div>
+                            <div class="col-lg-4 graph-wrapper">
+                              <img class="graph-image" src="images/graph-circle2.svg" alt="circle chart">
+                            </div>
+                            <div class="col-lg-4 graph-wrapper">
+                              <img class="graph-image" src="images/graph-circle3.svg" alt="circle chart">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12 bar-graph-wrapper">
+                              <img class="bar-graph" src="images/graph_720.png" alt="graph">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row graph-btns">
+                  <div class="col-lg-6 btn-center">
+                    <button class="btn btn-default">TOTALS - Out of 5,211</button>
+                  </div>
+                  <div class="col-lg-6 btn-center">
+                    <button class="btn btn-default">APPLICANTS/DAY</button>
+                  </div>
+                </div>
+                <div class="row page-break">
+                    <div class="col-lg-5"><hr></div>
+                    <div class="col-lg-2 btn-center">
+                      <button class="btn btn-default">
+                        <i class="fa fa-fw fa-chevron-down"></i>
+                      </button>
+                    </div>
+                    <div class="col-lg-5"><hr></div>
+                </div>
+                <div class="row table-wrapper">
+                    <div class="col-lg-8">
+                        <div class="row table-row inverse">
+                            <div class="col-lg-3 table-head">
+                              JOB DESCRIPTION
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <i class="fa fa-fw fa-pencil"></i> Edit
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>POSITION TITLE</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <p>CUSTOMER SERVICE REPRESENTATIVE</p>
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>LOCATION</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>EMPLOYMENT TYPE</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <p>Full-Time</p>
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>EXPERIENCE</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <P>Mid-Level</P>
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>STATUS</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <p>Open</p>
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>DESCRIPTION</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Recusandae excepturi
+                                voluptate at quibusdam architecto eligendi
+                                numquam non! Praesentium fuga animi assumenda
+                                aspernatur voluptas culpa qui illo vero, nihil
+                                quo, dolores lorem lorem lorem lorem lorem .</p>
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>HIRING LEAD</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="row table-row">
+                            <div class="col-lg-3 table-head">
+                              <p>APPROVED SALARY</p>
+                            </div>
+                            <div class="col-lg-9 table-data">
+                              <p>Fat Stacks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 social-wrapper">
+                        <div class="row social-icons">
+                           <div class="col-lg-12">
+                               <button class="btn btn-social1">Post to FaceBook</button>
+                           </div>
+
+                        </div>
+                        <div class="row social-icons">
+                           <div class="col-lg-12">
+                               <button class="btn btn-social2">Tweet This Job</button>
+                           </div>
+
+                        </div>
+                        <div class="row social-icons">
+                           <div class="col-lg-12">
+                               <button class="btn btn-social3">Post to Linkedin</button>
+                           </div>
+
+                        </div>
+                        <div class="row link-card">
+                            <div class="col-lg-12 link-card-head">
+                              <i class="fa fa-fw fa-globe"></i>
+                              <p>Link to this Job</p>
+                            </div>
+                            <div class="col-lg-12 link-card-body">
+                              <p>lorem ipsum and some other stuff</p>
+                            </div>
+                            <div class="col-lg-12 link-card-link">
+                              <p>link/url</p>
+                            </div>
+                        </div>
+                        <div class="row link-card">
+                            <div class="col-lg-12 link-card-head">
+                              <p>Use the Button Widget</p>
+                            </div>
+                            <div class="col-lg-12 link-card-body">
+                              <p>This widget is lorem of the ipsum</p>
+                            </div>
+                            <div class="col-lg-12 link-card-link">
+                              <p>embedible link and such</p>
+                            </div>
+                        </div>
+                        <div class="row link-card">
+                            <div class="col-lg-12 link-card-head">
+                              <p>Upload Resumes by Email</p>
+                            </div>
+                            <div class="col-lg-12 link-card-body">
+                              <p>You can automatically upload</p>
+                            </div>
+                            <div class="col-lg-12 link-card-link">
+                              <p>email address</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-          </div>
-
-            <div class="col-lg-6 row3-right">
-              <div class="graph-container"></div>
-              <button class="row3-button2">Button2</button>
-            </div>
 
         </div>
-
-        <div class="row row4">
-          <div class="col-lg-8 col-md-12 col-sm-1 row4-left">
-            <div class="row4-left-content"></div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-1 row4-right">
-            <div class="row4-right-content"></div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </div>
 </body>
 
 </html>
