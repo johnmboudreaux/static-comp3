@@ -18,54 +18,54 @@
     <div class="container-fluid">
         <div class="row">
             <!-- NAV -->
-            <div class="col-lg-2 nav">
+            <div class="col-lg-2 col-md-1 nav">
                 <div class="row nav-row">
-                   <div class="col-lg-12 nav-profile">
+                   <div class="col-lg-12 nav-profile sm-hidden">
                        <img src="images/IMG_1214.jpg" alt="" class="nav-profile-image">
-                        <p class="nav-profile-name">John Michael <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+                        <p class="nav-profile-name md-hidden">John Michael <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
                    </div>
                 </div>
                 <div class="row nav-row nav-section">
                     <div class="col-lg-12 nav-menu-section">
-                        <p>Main</p>
+                        <p class="sm-hidden">Main</p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-home"></i> HOME</p>
+                        <p><i class="fa fa-fw fa-home"></i><span class="md-hidden">HOME</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-briefcase"></i> JOBS</p>
+                        <p><i class="fa fa-fw fa-briefcase"></i> <span class="md-hidden">JOBS</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-building"></i> RESUMES</p>
+                        <p><i class="fa fa-fw fa-building"></i><span class="md-hidden"> RESUMES</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-tasks"></i> TASKS</p>
+                        <p><i class="fa fa-fw fa-tasks"></i><span class="md-hidden"> TASKS</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-calendar"></i> CALENDAR</p>
+                        <p><i class="fa fa-fw fa-calendar"></i><span class="md-hidden"> CALENDAR</span></p>
                     </div>
                 </div>
                 <div class="row nav-row nav-section">
                     <div class="col-lg-12 nav-menu-section">
-                        <p>Admin</p>
+                        <p class="sm-hidden">Admin</p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-user"></i> USERS</p>
+                        <p><i class="fa fa-fw fa-user"></i><span class="md-hidden"> USERS</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-location-arrow"></i> LOCATIONS</p>
+                        <p><i class="fa fa-fw fa-location-arrow"></i><span class="md-hidden"> LOCATIONS</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-file-word-o"></i> WORKFLOWS</p>
+                        <p><i class="fa fa-fw fa-file-word-o"></i><span class="md-hidden"> WORKFLOWS</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-building-o"></i> JOB BOARDS</p>
+                        <p><i class="fa fa-fw fa-building-o"></i><span class="md-hidden"> JOB BOARDS</span></p>
                     </div>
                     <div class="col-lg-12 nav-menu-item">
-                        <p><i class="fa fa-fw fa-share-square"></i> SOCIAL</p>
+                        <p><i class="fa fa-fw fa-share-square"></i><span class="md-hidden"> SOCIAL</span></p>
                     </div>
                 </div>
-                <div class="row nav-row nav-section">
+                <div class="row nav-row nav-section md-hidden">
                     <div class="col-lg-12 nav-menu-section">
                         <p>Categories</p>
                     </div>
@@ -85,8 +85,8 @@
             </div>
 
             <!-- BODY -->
-            <div class="col-lg-10">
-                <div class="row">
+            <div class="col-lg-10 col-md-11">
+                <div class="row page-search">
                     <div class="col-lg-12">
                         <div class="menu-box">
                           <i class="fa fa-fw fa-bars menu-box-icon"></i>
@@ -104,14 +104,14 @@
                     </div>
                 </div>
                 <div class="row page-header">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12 page-header-top">
                         <h2 class="page-title">Customer Service Representative</h2>
                         <p class="page-header-location">
                           <i class="fa fa-fw fa-location-arrow"></i>
                           San Francisco, CA &middot; <span class="blue-text">Preview This Post</span>
                         </p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12">
                         <button class="btn btn-default header-btn">
                           <i class="fa fa-fw fa-circle green-text"></i> Open
                         </button>
@@ -126,7 +126,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row page-tabs">
                     <div class="col-lg-12 tabs">
                         <div class="tab-select active">
                           <p>SUMMARY</p>
@@ -152,21 +152,33 @@
                     </div>
                 </div>
                 <div class="row graphs">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="row">
-                            <div class="col-lg-4 graph-wrapper">
+                            <div class="col-lg-4 col-sm-12 graph-wrapper">
                               <img class="graph-image" src="images/graph-circle1.svg" alt="circle chart">
+                              <div class="graph-data">
+                                <h3 class="graph-data-head">1234</h3>
+                                <p class="graph-data-body">Applicants</p>
+                              </div>
                             </div>
-                            <div class="col-lg-4 graph-wrapper">
+                            <div class="col-lg-4 col-sm-12 graph-wrapper">
                               <img class="graph-image" src="images/graph-circle2.svg" alt="circle chart">
+                              <div class="graph-data">
+                                <h3 class="graph-data-head">1234</h3>
+                                <p class="graph-data-body">Interviews</p>
+                              </div>
                             </div>
-                            <div class="col-lg-4 graph-wrapper">
+                            <div class="col-lg-4 col-sm-12 graph-wrapper">
                               <img class="graph-image" src="images/graph-circle3.svg" alt="circle chart">
+                              <div class="graph-data">
+                                <h3 class="graph-data-head">1234</h3>
+                                <p class="graph-data-body">Forwards</p>
+                              </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="row">
                             <div class="col-lg-12 bar-graph-wrapper">
                               <img class="bar-graph" src="images/graph_720.png" alt="graph">
@@ -176,14 +188,14 @@
                     </div>
                 </div>
                 <div class="row graph-btns">
-                  <div class="col-lg-6 btn-center">
+                  <div class="col-lg-6 col-sm-12 btn-center">
                     <button class="btn btn-default">TOTALS - Out of 5,211</button>
                   </div>
-                  <div class="col-lg-6 btn-center">
+                  <div class="col-lg-6 col-sm-12 btn-center">
                     <button class="btn btn-default">APPLICANTS/DAY</button>
                   </div>
                 </div>
-                <div class="row page-break">
+                <div class="row page-break sm-hidden">
                     <div class="col-lg-5"><hr></div>
                     <div class="col-lg-2 btn-center">
                       <button class="btn btn-default">
@@ -193,60 +205,79 @@
                     <div class="col-lg-5"><hr></div>
                 </div>
                 <div class="row table-wrapper">
-                    <div class="col-lg-8">
+                    <div class="col-lg-9 col-md-12 table-col">
                         <div class="row table-row inverse">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               JOB DESCRIPTION
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <i class="fa fa-fw fa-pencil"></i> Edit
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>POSITION TITLE</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <p>CUSTOMER SERVICE REPRESENTATIVE</p>
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>LOCATION</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <p>San Francisco, CA</p>
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>EMPLOYMENT TYPE</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <p>Full-Time</p>
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>EXPERIENCE</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <P>Mid-Level</P>
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>STATUS</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <p>Open</p>
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>DESCRIPTION</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Recusandae excepturi
                                 voluptate at quibusdam architecto eligendi
@@ -254,53 +285,67 @@
                                 aspernatur voluptas culpa qui illo vero, nihil
                                 quo, dolores lorem lorem lorem lorem lorem .</p>
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>HIRING LEAD</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <img src="" alt="">
                             </div>
+                           </div>
+
                         </div>
                         <div class="row table-row">
-                            <div class="col-lg-3 table-head">
+                           <div class="col-lg-12 table-info">
+                               <div class="table-head">
                               <p>APPROVED SALARY</p>
                             </div>
-                            <div class="col-lg-9 table-data">
+                            <div class="table-data">
                               <p>Fat Stacks</p>
                             </div>
+                           </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-4 social-wrapper">
+                    <div class="col-lg-3 col-md-5 col-sm-12 social-wrapper">
                         <div class="row social-icons">
                            <div class="col-lg-12">
-                               <button class="btn btn-social1">Post to FaceBook</button>
+                               <button class="btn btn-social btn-social1">
+                                 <i class="fa fa-fw fa-facebook"></i>Post to FaceBook
+                               </button>
                            </div>
 
                         </div>
                         <div class="row social-icons">
                            <div class="col-lg-12">
-                               <button class="btn btn-social2">Tweet This Job</button>
+                               <button class="btn btn-social btn-social2">
+                                 <i class="fa fa-fw fa-twitter"></i>Tweet This Job
+                               </button>
                            </div>
 
                         </div>
                         <div class="row social-icons">
                            <div class="col-lg-12">
-                               <button class="btn btn-social3">Post to Linkedin</button>
+                               <button class="btn btn-social btn-social3">
+                                 <i class="fa fa-fw fa-linkedin"></i> Post to Linkedin
+                               </button>
                            </div>
 
                         </div>
                         <div class="row link-card">
                             <div class="col-lg-12 link-card-head">
-                              <i class="fa fa-fw fa-globe"></i>
-                              <p>Link to this Job</p>
+                              <p><i class="fa fa-fw fa-globe"></i>Link to this Job</p>
                             </div>
                             <div class="col-lg-12 link-card-body">
                               <p>lorem ipsum and some other stuff</p>
                             </div>
                             <div class="col-lg-12 link-card-link">
                               <p>link/url</p>
+                              <button class="btn btn-copy">Copy</button>
                             </div>
                         </div>
                         <div class="row link-card">
@@ -311,7 +356,8 @@
                               <p>This widget is lorem of the ipsum</p>
                             </div>
                             <div class="col-lg-12 link-card-link">
-                              <p>embedible link and such</p>
+                              <p>embedible link</p>
+                              <button class="btn btn-copy">Copy</button>
                             </div>
                         </div>
                         <div class="row link-card">
@@ -323,6 +369,7 @@
                             </div>
                             <div class="col-lg-12 link-card-link">
                               <p>email address</p>
+
                             </div>
                         </div>
                     </div>

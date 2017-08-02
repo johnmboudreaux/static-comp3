@@ -1,9 +1,10 @@
 body * {
-  /*border: 1px solid #ff6666;*/
   box-sizing: border-box;
 }
 
-
+body {
+  background: #364053;
+}
 
 /*grid-layouts*/
 
@@ -72,6 +73,10 @@ body * {
 }
 
 @media all and (max-width: 1024px) {
+  .md-hidden {
+    display: none;
+  }
+
   .col-md-12 {
     width: 100%;
   }
@@ -111,6 +116,9 @@ body * {
 }
 
 @media all and (max-width: 640px) {
+  .sm-hidden {
+    display: none;
+  }
   .col-sm-12 {
     width: 100%;
   }
@@ -153,8 +161,7 @@ body * {
 
 .nav {
   background: #364053;
-  height: 100%;
-  min-height: 125vh;
+  min-height: 100vh;
 }
 
 .nav-row {
@@ -212,6 +219,10 @@ body * {
   margin-right: 7.5px;
 }
 
+.page-search {
+  background: #fff;
+}
+
 .fa-yellow {
   color: #ffff66;
 }
@@ -263,6 +274,7 @@ body * {
 /*header*/
 
 .page-header {
+  background: #fff;
   padding: 40px 40px 20px 40px;
 }
 
@@ -331,9 +343,14 @@ body * {
   color: #666666;
 }
 
+.page-tabs {
+  background: #fff;
+}
+
 .graph-wrapper {
   text-align: center;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .graph-image {
@@ -344,6 +361,25 @@ body * {
   background-color: #edf2f7;
   border-top: solid 2px #e0e5ea;
   padding: 40px 40px 10px 40px;
+}
+
+.graph-data {
+  height: 100%;
+  left: 0;
+  padding-top: 30%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.graph-data-head {
+  color: #666e77;
+}
+
+.graph-data-body{
+  color: #666e77;
+  font-size: .8em;
 }
 
 .btn-center {
@@ -370,7 +406,10 @@ body * {
 
 .table-wrapper {
   background-color: #edf2f7;
-  padding: 40px;
+}
+
+.table-col {
+  padding: 40px 20px 40px 40px;;
 }
 
 .table-row {
@@ -382,49 +421,165 @@ body * {
   background: #707d96;
 }
 
-.table-row.inverse > .table-head {
+.table-row.inverse > .table-info > .table-head{
   color: #fff;
   border: none;
 }
 
-.table-row.inverse > .table-data {
+.table-row.inverse > .table-info > .table-data {
   color: #fff;
   border: none;
+}
+
+.table-row.inverse > .table-info {
+  border: none;
+}
+
+.table-info {
+  border-bottom: solid 1px #f3f1f3;
 }
 
 .table-head {
-  border-bottom: solid 1px #f3f1f3;
   color: #7b7f87;
+  float: left;
   font-size: .7em;
   font-weight: bold;
   padding: 25px 0;
+  width: 25%;
 }
 
 .table-data {
-  border-bottom: solid 1px #f3f1f3;
   color: #7b7f87;
+  float: left;
   font-size: .7em;
   padding: 25px 0;
+  width: 75%;
 }
 
 .social-wrapper {
+  padding: 40px 40px 40px 20px;
+}
 
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.btn-social {
+  color: #fff;
+  font-size: .8em;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.btn-social > .fa {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .btn-social1 {
   background-color: #4e71c3;
-  border: solid 1px black;
-  width: 75%;
+  top: px;
 }
 
 .btn-social2 {
   background-color: #02a9f0;
-  border: solid 1px black;
-  width: 75%;
 }
 
 .btn-social3 {
   background-color: #0380bd;
-  border: solid 1px black;
-  width: 75%;
+}
+
+.link-card {
+  border-bottom: solid 2px #e0e5ea;
+  margin-bottom: 25px;
+}
+
+.link-card-head {
+  color: #7b7f87;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.link-card-link {
+  background: #fff;
+  color: #7b7f87;
+  font-size: .7em;
+  margin-bottom: 25px;
+  padding: 15px;
+  position: relative;
+}
+
+.link-card-body {
+  color: #7b7f87;
+  font-size: .7em;
+  margin-bottom: 15px;
+}
+
+.btn-copy {
+  background-color: #45bbbf;
+  color: #fff;
+  font-size: .7em;
+  height: 100%;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .nav-profile-img {
+    width: 100%;
+  }
+
+  .nav-menu-item {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .tab-select.active {
+    border: none;
+  }
+
+  .page-header-top {
+    margin-bottom: 30px;
+  }
+
+  .table-col {
+    padding: 40px;
+  }
+
+  .social-wrapper {
+    padding: 40px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .nav-menu-item {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .nav-section {
+    padding: 15px 5px;
+  }
+
+  .table-row {
+    padding: 10px 2.5px;
+  }
+
+  .table-head {
+    width: 50%;
+  }
+
+  .table-data {
+    width: 50%;
+  }
+
+  .tab-select {
+    text-align: center;
+    width: 100%;
+  }
 }
